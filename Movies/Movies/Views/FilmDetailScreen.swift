@@ -1,27 +1,35 @@
-//
-//  FilnDetailScreen.swift
-//  Movies
-//
-//  Created by Vitaly on 17.11.2025.
-//
 
 import SwiftUI
 
 struct FilmDetailScreen: View {
+    let film: Film
+    
+    @State var viewModel = FilmDetailViewModel()
+    
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Hello")
-            
-            Divider()
-            
-            Text("Characters")
-                .font(.title3)
-            
-            
+        ScrollView {
+            VStack(alignment: .leading, spacing: 8) {
+                FilmImageView(urlPatch: film.backdropPath)
+                    .frame(height: 230)
+                
+                
+                VStack(alignment: .leading) {
+                    Text(film.title)
+                    
+                    Divider()
+                    
+                    Text("Characters")
+                        .font(.title3)
+                }
+                .padding()
+            }
+        }
+        .task(id: film.id) {
+            await viewModel.fetch(for: film)
         }
     }
 }
 
 #Preview {
-    FilmDetailScreen()
+    FilmDetailScreen(film: Film.example)
 }

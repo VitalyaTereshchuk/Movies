@@ -15,13 +15,20 @@ struct FilmsListView: View {
                 }
             case .loaded(let films):
                 List(films) { film in
-                    NavigationLink(value: film.title) {
-                        Text(film.title)
+                    HStack(spacing: 25) {
+                        FilmImageView(urlPatch: film.posterPath)
+                            .frame(width: 100, height: 150)
+                            .cornerRadius(10)
+                        
+                        NavigationLink(value: film) {
+                            Text(film.title)
+                        }
                     }
-//                    .navigationDestination(for: Film.self) { film in
-//                        
-//                    }
                 }
+                .navigationDestination(for: Film.self) { film in
+                    FilmDetailScreen(film: film)
+                }
+                
             case .error(let error):
                 Text(error)
                     .foregroundStyle(.pink)
@@ -34,6 +41,6 @@ struct FilmsListView: View {
 }
 
 #Preview {
-    @State @Previewable var vm = FilmsViewModel(service: MockService())
+    @State @Previewable var vm = FilmsViewModel(service: DefaultService())
     FilmsListView(filmViewModel: vm)
 }

@@ -28,4 +28,10 @@ struct MockService: Service {
         let data = try loadSampleData()
         return TrendingMoviesResponse(results: data.results)
     }
+    
+    //MARK: Preview/ testing only
+    func fetchFilm() -> Film {
+        let data = try! loadSampleData()
+        return data.results.first!
+    }
 }
