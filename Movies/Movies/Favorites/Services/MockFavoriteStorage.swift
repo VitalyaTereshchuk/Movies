@@ -1,8 +1,9 @@
-//
-//  MockFavoriteStorage.swift
-//  Movies
-//
-//  Created by Vitaly on 21.11.2025.
-//
-
 import Foundation
+
+struct MockFavoriteStorage: FavoriteStorageProtocol {
+    func load() -> Set<Int> {
+        return [1054867]
+    }
+    
+    func save(favoriteIDs: Set<Int>) { }
+}

@@ -5,7 +5,7 @@ struct FilmImageView: View {
     let url: URL?
     
     init(urlPatch: String) {
-        self.url = URL(string: "https://image.tmdb.org/t/p/w500/\(urlPatch)")
+        self.url = URL(string: urlPatch)
     }
     
     var body: some View {
@@ -20,7 +20,7 @@ struct FilmImageView: View {
             case .success(let image):
                 image
                     .resizable()
-                    .scaledToFit()
+                    .scaledToFill()
             case .failure(_):
                 Text("Could not get image")
             @unknown default:

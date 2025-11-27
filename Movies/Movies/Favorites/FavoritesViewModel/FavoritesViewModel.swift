@@ -4,20 +4,23 @@ import Observation
 @Observable
 class FavoritesViewModel {
     
-   private(set) var favoriteIDs: Set<String> = []
+   private(set) var favoriteIDs: Set<Int> = []
     
-    private let favoriteKey = "MoviesExplorer.FavoritesFilms"
+    let service: FavoriteStorageProtocol
+    
+    init(service: FavoriteStorageProtocol = DefaultFavoriteStorage()) {
+        self.service = service
+    }
     
     func load() {
-        let array = UserDefaults.standard.stringArray(forKey: favoriteKey) ?? []
-        favoriteIDs = Set(array)
+        favoriteIDs = service.load()
     }
     
     func save() {
-        UserDefaults.standard.set(favoriteIDs, forKey: favoriteKey)
+        service.save(favoriteIDs: favoriteIDs)
     }
     
-    func toggleFavorite(filmID: String) {
+    func toggleFavorite(filmID: Int) {
         if favoriteIDs.contains(filmID) {
             favoriteIDs.remove(filmID)
         } else {
@@ -27,7 +30,7 @@ class FavoritesViewModel {
         save()
     }
     
-    func isFavorite(filmID: String) -> Bool {
+    func isFavorite(filmID: Int) -> Bool {
         favoriteIDs.contains(filmID)
     }
 }

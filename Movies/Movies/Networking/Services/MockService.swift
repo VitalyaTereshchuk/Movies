@@ -1,6 +1,6 @@
 import Foundation
 
-struct MockService: Service {
+struct MockService: ServiceProtocol {
     struct SampleData: Decodable {
         let results: [Film]
     }
@@ -24,9 +24,9 @@ struct MockService: Service {
     }
     
     //MARK: Protocol conformance
-    func fetchFilms() async throws -> TrendingMoviesResponse {
+    func fetchFilms() async throws -> [Film] {
         let data = try loadSampleData()
-        return TrendingMoviesResponse(results: data.results)
+        return data.results
     }
     
     //MARK: Preview/ testing only

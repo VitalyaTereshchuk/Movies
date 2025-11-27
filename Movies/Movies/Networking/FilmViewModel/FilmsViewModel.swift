@@ -14,9 +14,9 @@ class FilmsViewModel {
     var state: State = .idle
     var films: [Film] = []
     
-    private let service: Service
+    private let service: ServiceProtocol
     
-    init(service: Service = DefaultService()) {
+    init(service: ServiceProtocol = DefaultService()) {
         self.service = service
     }
     
@@ -26,7 +26,7 @@ class FilmsViewModel {
         state = .loading
         
         do {
-            let film = try await service.fetchFilms().results
+            let film = try await service.fetchFilms()
             self.state = .loaded(film)
         }
         catch let error as APIError {

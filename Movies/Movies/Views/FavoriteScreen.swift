@@ -9,12 +9,13 @@ import SwiftUI
 
 struct FavoriteScreen: View {
     let filmsViewModel: FilmsViewModel
+    let favoritesViewModel: FavoritesViewModel
     
     var films: [Film] {
         //TODO:
-        //Get favourites
+        //Get favorites
         //retrieve ids from storage
-        //get data for favourites ids from film data
+        //get data for favorite ids from film data
         
         return []
     }
@@ -23,16 +24,16 @@ struct FavoriteScreen: View {
         NavigationStack {
             Group {
                 if films.isEmpty {
-                    ContentUnavailableView("No Favourites yet", systemImage: "heart")
+                    ContentUnavailableView("No Favorite yet", systemImage: "heart")
                 } else {
-                    FilmsListView(films: films)
+                    FilmsListView(films: films, favoritesViewModel: favoritesViewModel)
                 }
             }
-                    .navigationTitle("Favourites")
+                    .navigationTitle("Favorites")
         }
     }
 }
 
 #Preview {
-    FavoriteScreen(filmsViewModel: FilmsViewModel(service: MockService()))
+    FavoriteScreen(filmsViewModel: FilmsViewModel(service: MockService()), favoritesViewModel: FavoritesViewModel(service: MockFavoriteStorage()))
 }

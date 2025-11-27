@@ -1,18 +1,36 @@
-//
-//  FilmsScreen.swift
-//  Movies
-//
-//  Created by Vitaly on 20.11.2025.
-//
-
 import SwiftUI
 
 struct FilmsScreen: View {
+    let filmViewModel: FilmsViewModel
+    let favoritesViewModel: FavoritesViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            Group {
+                switch filmViewModel.state {
+                case .idle:
+                    Text("No Films yet")
+                case .loading:
+                    ProgressView {
+                        Text("Loading...")
+                    }
+                case .loaded(let films):
+                    FilmsListView(films: films,
+                                  favoritesViewModel: favoritesViewModel)
+                    
+                case .error(let error):
+                    Text(error)
+                        .foregroundStyle(.pink)
+                }
+            }
+            .navigationTitle("Movies")
+        }
+        .task {
+            await filmViewModel.fetchFilms()
+        }
     }
 }
 
 #Preview {
-    FilmsScreen()
+    FilmsScreen(filmViewModel: FilmsViewModel(service: MockService()), favoritesViewModel: FavoritesViewModel(service: MockFavoriteStorage()))
 }

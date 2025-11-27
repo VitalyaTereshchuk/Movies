@@ -8,28 +8,32 @@ struct FilmDetailScreen: View {
     
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 8) {
-                FilmImageView(urlPatch: film.backdropPath)
-                    .frame(height: 230)
-                
+            VStack( spacing: 8) {
+                FilmImageView(urlPatch: film.primaryImage)
+                    .frame(height: 300)
+                    .containerRelativeFrame(.horizontal)
                 
                 VStack(alignment: .leading) {
-                    Text(film.title)
+                    Text(film.primaryTitle)
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        
+                        
                     
                     Divider()
                     
                     Text("Characters")
-                        .font(.title3)
+                        .font(.default)
                 }
                 .padding()
             }
         }
-        .task(id: film.id) {
+        .task(id: String(film.id)) {
             await viewModel.fetch(for: film)
         }
     }
 }
 
-#Preview {
-    FilmDetailScreen(film: Film.example)
-}
+//#Preview {
+//    FilmDetailScreen(film: Film.example)
+//}

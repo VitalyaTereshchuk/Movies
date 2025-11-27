@@ -1,8 +1,20 @@
-//
-//  FavoriteButton.swift
-//  Movies
-//
-//  Created by Vitaly on 23.11.2025.
-//
-
 import Foundation
+import SwiftUI
+
+struct FavoriteButton: View {
+    let filmID: Int
+    let favoritesViewModel: FavoritesViewModel
+    
+    var isFavorite: Bool {
+        favoritesViewModel.isFavorite(filmID: filmID)
+    }
+    
+    var body: some View {
+        Button {
+            favoritesViewModel.toggleFavorite(filmID: filmID)
+        } label: {
+            Image(systemName: isFavorite ? "heart.fill" : "heart")
+                .foregroundStyle(isFavorite ? Color.pink : Color.gray)
+        }
+    }
+}

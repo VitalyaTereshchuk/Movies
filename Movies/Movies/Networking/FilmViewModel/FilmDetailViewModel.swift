@@ -12,9 +12,9 @@ class FilmDetailViewModel {
     
     var state: State = .idle
     
-    let service: Service
+    let service: ServiceProtocol
     
-    init(service: Service = DefaultService()) {
+    init(service: ServiceProtocol = DefaultService()) {
         self.service = service
     }
     

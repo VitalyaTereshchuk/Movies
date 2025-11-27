@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct SearchScreen: View {
+    @State private var text: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            Text("Search screen")
+                .searchable(text: $text)
+        }
     }
 }
 
