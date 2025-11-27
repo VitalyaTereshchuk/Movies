@@ -15,6 +15,7 @@ class FilmsViewModel {
     var films: [Film] = []
     
     private let service: Service
+    
     init(service: Service = DefaultService()) {
         self.service = service
     }

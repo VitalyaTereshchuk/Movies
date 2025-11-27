@@ -1,6 +1,6 @@
 
 import Foundation
 
-protocol Service {
+protocol ServiceProtocol {
     func fetchFilms() async throws -> TrendingMoviesResponse
 }
