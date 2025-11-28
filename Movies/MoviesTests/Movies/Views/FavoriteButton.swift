@@ -16,5 +16,7 @@ struct FavoriteButton: View {
             Image(systemName: isFavorite ? "heart.fill" : "heart")
                 .foregroundStyle(isFavorite ? Color.pink : Color.gray)
         }
+        .buttonStyle(.plain)
+//        .controlSize(.large)
     }
 }

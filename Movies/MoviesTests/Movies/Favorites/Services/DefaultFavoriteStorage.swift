@@ -12,3 +12,4 @@ struct DefaultFavoriteStorage: FavoriteStorageProtocol {
         UserDefaults.standard.set(Array(favoriteIDs), forKey: favoriteKey)
     }
 }
+
