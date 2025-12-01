@@ -33,4 +33,11 @@ class FavoritesViewModel {
     func isFavorite(filmID: String) -> Bool {
         favoriteIDs.contains(filmID)
     }
+    
+    //MARK: Preview
+    static var exampleFavorite: FavoritesViewModel {
+        let vm = FavoritesViewModel(service: MockFavoriteStorage())
+        vm.favoriteIDs = ["1", "2"]
+        return vm
+    }
 }

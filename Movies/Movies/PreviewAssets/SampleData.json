@@ -1,4 +1,4 @@
-{ "results": [
+[
     {
         "id": "tt1312221",
         "url": "https://www.imdb.com/title/tt1312221/",
@@ -242,6 +242,4 @@
         "numVotes": 175769,
         "metascore": 95
     }
-]}
-
-
+]

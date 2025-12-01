@@ -36,4 +36,11 @@ class FilmsViewModel {
             self.state = .error("unowned error")
         }
     }
+    
+    //MARK: Preview
+    static var example: FilmsViewModel {
+        let vm = FilmsViewModel(service: MockService())
+        vm.state = .loaded([Film.example, Film.exampleFavorite])
+        return vm
+    }
 }

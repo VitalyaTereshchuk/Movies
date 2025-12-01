@@ -8,6 +8,10 @@ struct FilmImageView: View {
         self.url = URL(string: urlPatch)
     }
     
+    init(url: URL?) {
+        self.url = url
+    }
+    
     var body: some View {
         AsyncImage(url: url) { phase in
             switch phase {
@@ -30,9 +34,11 @@ struct FilmImageView: View {
     }
 }
 
-//#Preview("postar image") {
-//    FilmImageView(film: "https://image.tmdb.org/t/p/w500/m1jFoahEbeQXtx4zArT2FKdbNIj.jpg")
-//}
+#Preview("postar image") {
+    FilmImageView(url: URL.convertAssetImage(named: "primaryImage"))
+        .frame(width: 200 ,height: 300)
+        .cornerRadius(10)
+}
 //
 //#Preview("banner image") {
 //    FilmImageView(film: "https://image.tmdb.org/t/p/w500/jUPCUYoVdTGa5DBSxOTAriLWqmW.jpg")

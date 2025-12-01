@@ -29,9 +29,4 @@ struct DefaultService: ServiceProtocol {
         
         return try await fetch(for: url, type: [Film].self)
     }
-//    func fetchFilms() async throws -> TrendingMoviesResponse {
-//        let url = "https://api.themoviedb.org/3/trending/movie/day?api_key=7c1de54e9061f4f2124aaf8669725261"
-//        
-//        return try await fetch(for: url, type: TrendingMoviesResponse.self)
-//    }
 }
