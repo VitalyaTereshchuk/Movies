@@ -1,0 +1,422 @@
+let id: String
+let primaryTitle: String
+let description: String
+let primaryImage: String
+let thumbnails: [Url]
+let trailer: String
+let video: String?
+let filmingLocations: [String]?
+let startYear: Int
+let averageRating: Float?
+let releaseDate: String
+
+
+    [
+        {
+            "id": "tt7657566",
+            "url": "https://www.imdb.com/title/tt7657566/",
+            "primaryTitle": "Death on the Nile",
+            "originalTitle": "Death on the Nile",
+            "type": "movie",
+            "description": "Belgian sleuth Hercule Poirot's vacation aboard a glamorous river steamer turns into a terrifying search for a murderer when a picture-perfect couple's idyllic honeymoon is tragically cut short. Set against an epic landscape of sweeping Egyptian desert vistas and the majestic Giza pyramids, this tale of unbridled passion and incapacitating jealousy features a cosmopolitan group of impeccably dressed travelers, and enough wicked twists and turns to leave audiences guessing until the final, shocking denouement.",
+            "primaryImage": "https://m.media-amazon.com/images/M/MV5BMmZmZDE0NjgtNGQ5Ny00MTA3LTk5YjctMDM3YTFlMDg4MzI3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+            "thumbnails": [
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BMmZmZDE0NjgtNGQ5Ny00MTA3LTk5YjctMDM3YTFlMDg4MzI3XkEyXkFqcGc@._V1_QL75_UX280_CR0,0,100,148_.jpg",
+                    "width": 100,
+                    "height": 148
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BMmZmZDE0NjgtNGQ5Ny00MTA3LTk5YjctMDM3YTFlMDg4MzI3XkEyXkFqcGc@._V1_QL75_UX280_CR0,0,280,414_.jpg",
+                    "width": 280,
+                    "height": 414
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BMmZmZDE0NjgtNGQ5Ny00MTA3LTk5YjctMDM3YTFlMDg4MzI3XkEyXkFqcGc@._V1_QL75_UX280_CR0,0,380,562_.jpg",
+                    "width": 380,
+                    "height": 562
+                }
+            ],
+            "trailer": "https://www.youtube.com/watch?v=dZRqB0JLizw",
+            "video": nil
+            "startYear": 2022,
+            "releaseDate": "2022-02-09",
+            "filmingLocations": [
+                "Aswan, Egypt"
+            ],
+            "genres": [
+                "Crime, Drama, Mystery"
+            ],
+            "averageRating": 6.3,
+        },
+        {
+            "id": "tt4154796",
+            "url": "https://www.imdb.com/title/tt4154796/",
+            "primaryTitle": "Avengers: Endgame",
+            "originalTitle": "Avengers: Endgame",
+            "type": "movie",
+            "description": "Avengers: Endgame is a 2019 superhero film that concludes the Infinity Saga, where the remaining Avengers must assemble to reverse Thanos' devastating snap. After Thanos wipes out half of all life in the universe, the surviving heroes, fractured and reeling from loss, find a way to challenge him and restore balance to the cosmos, no matter the consequences.",
+            "primaryImage": "https://m.media-amazon.com/images/M/MV5BNzkwOTRjZDItOGNhOS00YjRkLTg3NmEtYWE2MWY5NDcyZDAwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+            "thumbnails": [
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BNzkwOTRjZDItOGNhOS00YjRkLTg3NmEtYWE2MWY5NDcyZDAwXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,100,148_.jpg",
+                    "width": 100,
+                    "height": 148
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BNzkwOTRjZDItOGNhOS00YjRkLTg3NmEtYWE2MWY5NDcyZDAwXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,280,414_.jpg",
+                    "width": 280,
+                    "height": 414
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BNzkwOTRjZDItOGNhOS00YjRkLTg3NmEtYWE2MWY5NDcyZDAwXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,380,562_.jpg",
+                    "width": 380,
+                    "height": 562
+                }
+            ],
+            "trailer": "https://www.youtube.com/watch?v=TcMBFSGVi1c",
+            "video": "https://www.youtube.com/watch?v=4pFUP0HZwWM",
+            "startYear": 2019,
+            "releaseDate": "2019-04-22",
+            "filmingLocations": [
+                "County Durham, England, UK (Thor Meets His Mother In Asgard)"
+            ],
+            "genres": [
+                "Action, Adventure, Sci-Fi"
+            ],
+            "averageRating": 8.4,
+        },
+        {
+            "id": "tt8946378",
+            "url": "https://www.imdb.com/title/tt8946378/",
+            "primaryTitle": "Knives Out: Mord ist Familiensache",
+            "originalTitle": "Knives Out: Mord ist Familiensache",
+            "type": "movie",
+            "description": "Knives Out: Mord ist Familiensache ist ein Krimi-Mystery-Film über den Mord an dem berühmten Krimiautor Harlan Thrombey. An seinem 85. Geburtstag wird er tot in seinem Arbeitszimmer aufgefunden. Der charismatische Detektiv Benoit Blanc ermittelt daraufhin in der exzentrischen Familie und im Hauspersonal, die alle ein Netz aus Geheimnissen und Lügen spinnen, um sich gegenseitig der Tat zu bezichtigen und die Wahrheit zu verschleiern. Der Film ist eine moderne Hommage an klassische Krimis von Agatha Christie.",
+            "primaryImage": "https://m.media-amazon.com/images/M/MV5BMzA5OTM4ODAtMjJiMS00ZTBkLWFmYmItZjI5Mzg3MWJhMTA0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+            "thumbnails": [
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BMzA5OTM4ODAtMjJiMS00ZTBkLWFmYmItZjI5Mzg3MWJhMTA0XkEyXkFqcGc@._V1_QL75_UX280_CR0,0,100,148_.jpg",
+                    "width": 100,
+                    "height": 148
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BMzA5OTM4ODAtMjJiMS00ZTBkLWFmYmItZjI5Mzg3MWJhMTA0XkEyXkFqcGc@._V1_QL75_UX280_CR0,0,280,414_.jpg",
+                    "width": 280,
+                    "height": 414
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BMzA5OTM4ODAtMjJiMS00ZTBkLWFmYmItZjI5Mzg3MWJhMTA0XkEyXkFqcGc@._V1_QL75_UX280_CR0,0,380,562_.jpg",
+                    "width": 380,
+                    "height": 562
+                }
+            ],
+            "trailer": "https://www.youtube.com/watch?v=59-tJAQDU38",
+            "video": nil,
+            "startYear": 2019,
+            "releaseDate": "2019-09-07",
+            "filmingLocations": [
+                "Massachusetts, USA"
+            ],
+            "genres": [
+                "Comedy, Crime, Drama"
+            ],
+            "averageRating": 7.9,
+        },
+        {
+            "id": "tt4154756",
+            "url": "https://www.imdb.com/title/tt4154756/",
+            "primaryTitle": "Avengers: Infinity War",
+            "originalTitle": "Avengers: Infinity War",
+            "type": "movie",
+            "description": "Avengers: Infinity War is a superhero film where the Avengers and their allies, including the Guardians of the Galaxy, race against time to stop the powerful villain Thanos from collecting all six Infinity Stones. Thanos plans to use the stones to wipe out half of all life in the universe to fulfill his own twisted sense of justice. The fate of existence hangs in the balance as the heroes, tested like never before, battle to prevent his catastrophic plan.",
+            "primaryImage": "https://m.media-amazon.com/images/M/MV5BNzdhMWZlYjQtMWViYS00MjA3LTg2YjAtMmI3YzE2MTRjZjQ0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+            "thumbnails": [
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BNzdhMWZlYjQtMWViYS00MjA3LTg2YjAtMmI3YzE2MTRjZjQ0XkEyXkFqcGc@._V1_QL75_UX280_CR0,0,100,148_.jpg",
+                    "width": 100,
+                    "height": 148
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BNzdhMWZlYjQtMWViYS00MjA3LTg2YjAtMmI3YzE2MTRjZjQ0XkEyXkFqcGc@._V1_QL75_UX280_CR0,0,280,414_.jpg",
+                    "width": 280,
+                    "height": 414
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BNzdhMWZlYjQtMWViYS00MjA3LTg2YjAtMmI3YzE2MTRjZjQ0XkEyXkFqcGc@._V1_QL75_UX280_CR0,0,380,562_.jpg",
+                    "width": 380,
+                    "height": 562
+                }
+            ],
+            "trailer": "https://www.youtube.com/watch?v=6ZfuNTqbHE8",
+            "video": "https://www.youtube.com/watch?v=E8k7P_6-joY",
+            "startYear": 2018,
+            "releaseDate": "2018-04-22",
+            "filmingLocations": [
+                "Cockburn Street, Edinburgh, City of Edinburgh, Scotland, UK (Pizza Shop)"
+            ],
+            "genres": [
+                "Action, Adventure, Sci-Fi"
+            ],
+            "averageRating": 8.4,
+        },
+        {
+            "id": "tt1170358",
+            "url": "https://www.imdb.com/title/tt1170358/",
+            "primaryTitle": "The Hobbit: The Desolation of Smaug",
+            "originalTitle": "The Hobbit: The Desolation of Smaug",
+            "type": "movie",
+            "description": "The Hobbit: The Desolation of Smaug is the second installment of Peter Jackson's film adaptation of J.R.R. Tolkien's novel, following Bilbo Baggins, Gandalf, and a company of dwarves on their quest to reclaim the Lonely Mountain from the dragon Smaug. The film is filled with adventure, as the group faces dangers like the giant spiders of Mirkwood, encounters with elves and men in Lake-town, and an escape in barrels down a river. The story culminates in Bilbo's tense confrontation with the dragon Smaug himself. ",
+            "primaryImage": "https://m.media-amazon.com/images/M/MV5BMjljOTA1MzQtMDQ1NC00NTQ4LWJmNjItOWMyOTUxOWVjMTYyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+            "thumbnails": [
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BMjljOTA1MzQtMDQ1NC00NTQ4LWJmNjItOWMyOTUxOWVjMTYyXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,100,148_.jpg",
+                    "width": 100,
+                    "height": 148
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BMjljOTA1MzQtMDQ1NC00NTQ4LWJmNjItOWMyOTUxOWVjMTYyXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,280,414_.jpg",
+                    "width": 280,
+                    "height": 414
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BMjljOTA1MzQtMDQ1NC00NTQ4LWJmNjItOWMyOTUxOWVjMTYyXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,380,562_.jpg",
+                    "width": 380,
+                    "height": 562
+                }
+            ],
+            "trailer": "https://www.youtube.com/watch?v=fnaojlfdUbs",
+            "video": nil,
+            "startYear": 2013,
+            "releaseDate": "2013-12-02",
+            "filmingLocations": [
+                "Paradise, Glenorchy, Otago, New Zealand"
+            ],
+            "genres": [
+                " Adventure, Fantasy"
+            ],
+            "averageRating": 7.8,
+        },
+        {
+            "id": "tt8367814",
+            "url": "https://www.imdb.com/title/tt8367814/",
+            "primaryTitle": "The Gentlemen",
+            "originalTitle": "The Gentlemen",
+            "type": "movie",
+            "description": "The Gentlemen is a 2019 crime comedy film directed by Guy Ritchie about an American marijuana kingpin in London who tries to sell his lucrative empire. The sale triggers a web of schemes, blackmail, and schemes from various underworld figures who try to steal the business for themselves. The story is framed by a private investigator who is trying to blackmail the kingpin's right-hand man with a script detailing the events. ",
+            "primaryImage": "https://m.media-amazon.com/images/M/MV5BYzU4MTFiNmUtOWUxNy00YmZjLWFlMWUtZjZlNzg5NjYxMDI3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+            "thumbnails": [
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BYzU4MTFiNmUtOWUxNy00YmZjLWFlMWUtZjZlNzg5NjYxMDI3XkEyXkFqcGc@._V1_QL75_UX280_CR0,0,100,148_.jpg",
+                    "width": 100,
+                    "height": 148
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BYzU4MTFiNmUtOWUxNy00YmZjLWFlMWUtZjZlNzg5NjYxMDI3XkEyXkFqcGc@._V1_QL75_UX280_CR0,0,280,414_.jpg",
+                    "width": 280,
+                    "height": 414
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BYzU4MTFiNmUtOWUxNy00YmZjLWFlMWUtZjZlNzg5NjYxMDI3XkEyXkFqcGc@._V1_QL75_UX280_CR0,0,380,562_.jpg",
+                    "width": 380,
+                    "height": 562
+                }
+            ],
+            "trailer": "https://www.youtube.com/watch?v=2B0RpUGss2c",
+            "video": nil,
+            "startYear": 2019,
+            "releaseDate": "2019-12-03",
+            "filmingLocations": [
+                "London, UK"
+            ],
+            "genres": [
+                "Action, Comedy, Crime"
+            ],
+            "averageRating": 7.8,
+        },
+        {
+            "id": "tt2442560",
+            "url": "https://www.imdb.com/title/tt2442560/",
+            "primaryTitle": "Peaky Blinders - Gangs of Birmingham",
+            "originalTitle": "Peaky Blinders - Gangs of Birmingham",
+            "type": "TV Series",
+            "description": "Peaky Blinders - Gangs of Birmingham refers to both the real-life street gangs that operated in Birmingham, England, from the late 1800s to the early 1900s, and the fictional BBC television series inspired by them. Both the real gang and the show are known for their violent criminal activities, distinctive fashion, and local dominance in Birmingham. The show dramatizes the fictional Shelby crime family in Birmingham following World War I, while the real gangs were composed of working-class youths who engaged in robbery, extortion, and other crimes.",
+            "primaryImage": "https://m.media-amazon.com/images/M/MV5BOGM0NGY3ZmItOGE2ZC00OWIxLTk0N2EtZWY4Yzg3ZDlhNGI3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+            "thumbnails": [
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BOGM0NGY3ZmItOGE2ZC00OWIxLTk0N2EtZWY4Yzg3ZDlhNGI3XkEyXkFqcGc@._V1_QL75_UX280_CR0,0,100,148_.jpg",
+                    "width": 100,
+                    "height": 148
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BOGM0NGY3ZmItOGE2ZC00OWIxLTk0N2EtZWY4Yzg3ZDlhNGI3XkEyXkFqcGc@._V1_QL75_UX280_CR0,0,280,414_.jpg",
+                    "width": 280,
+                    "height": 414
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BOGM0NGY3ZmItOGE2ZC00OWIxLTk0N2EtZWY4Yzg3ZDlhNGI3XkEyXkFqcGc@._V1_QL75_UX280_CR0,0,380,562_.jpg",
+                    "width": 380,
+                    "height": 562
+                }
+            ],
+            "trailer": "https://www.youtube.com/watch?v=Ruyl8_PT_y8",
+            "video": nil,
+            "startYear": 2013,
+            "releaseDate": "2013-2022",
+            "filmingLocations": [
+                "London, UK"
+            ],
+            "genres": [
+                "Crime, Drama"
+            ],
+            "averageRating": 8.7,
+        },
+        {
+            "id": "tt1630029",
+            "url": "https://www.imdb.com/title/tt1630029/",
+            "primaryTitle": "Avatar: The Way of Water",
+            "originalTitle": "Avatar: The Way of Water",
+            "type": "movie",
+            "description": "Avatar: The Way of Water is a 2022 sci-fi action film directed by James Cameron that follows Jake Sully and Neytiri as they form a family and must protect it from a returning human threat on the moon Pandora. The story unfolds over a decade after the first film, forcing the Sully family to leave their home and seek refuge with the Metkayina, a water-based Na'vi clan. The film is known for its stunning visuals, particularly the underwater scenes and new creatures, and explores themes of family, environmentalism, and survival.",
+            "primaryImage": "https://m.media-amazon.com/images/M/MV5BOTk4YzA4ZDQtNGQ0Mi00ZDU0LWFjYjktOGUyNzY5N2JjZWNlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+            "thumbnails": [
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BOTk4YzA4ZDQtNGQ0Mi00ZDU0LWFjYjktOGUyNzY5N2JjZWNlXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,100,148_.jpg",
+                    "width": 100,
+                    "height": 148
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BOTk4YzA4ZDQtNGQ0Mi00ZDU0LWFjYjktOGUyNzY5N2JjZWNlXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,280,414_.jpg",
+                    "width": 280,
+                    "height": 414
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BOTk4YzA4ZDQtNGQ0Mi00ZDU0LWFjYjktOGUyNzY5N2JjZWNlXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,380,562_.jpg",
+                    "width": 380,
+                    "height": 562
+                }
+            ],
+            "trailer": "https://www.youtube.com/watch?v=d9MyW72ELq0",
+            "video": nil,
+            "startYear": 2022,
+            "releaseDate": "2022-12-14",
+            "filmingLocations": [
+                "Wellington, New Zealand"
+            ],
+            "genres": [
+                "Action, Adventure, Fantasy"
+            ],
+            "averageRating": 7.5,
+        },
+        {
+            "id": "tt0993846",
+            "url": "https://www.imdb.com/title/tt0993846/",
+            "primaryTitle": "The Wolf of Wall Street",
+            "originalTitle": "The Wolf of Wall Street",
+            "type": "movie",
+            "description": "The Wolf of Wall Street is a 2013 biographical crime comedy film directed by Martin Scorsese about the rise and fall of stockbroker Jordan Belfort and his firm, Stratton Oakmont. It depicts Belfort's journey from humble beginnings to becoming a wealthy and corrupt stockbroker involved in a major securities fraud case, highlighting themes of greed, excess, and the consequences of unchecked ambition. The film is known for its wild and graphic portrayal of the hedonistic lifestyle and the excessive amount of everything, including cursing, drugs, and partying.",
+            "primaryImage": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_FMjpg_UX1000_.jpg",
+            "thumbnails": [
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_QL75_UX280_CR0,0,100,148_.jpg",
+                    "width": 100,
+                    "height": 148
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_QL75_UX280_CR0,0,280,414_.jpg",
+                    "width": 280,
+                    "height": 414
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_QL75_UX280_CR0,0,380,562_.jpg",
+                    "width": 380,
+                    "height": 562
+                }
+            ],
+            "trailer": "https://www.youtube.com/watch?v=iszwuX1AK6A",
+            "video": nil,
+            "startYear": 2013,
+            "releaseDate": "2013-12-09",
+            "filmingLocations": [
+                "Wellington, New Zealand"
+            ],
+            "genres": [
+                "Biography, Comedy, Crime"
+            ],
+            "averageRating": 8.2,
+        },
+        {
+            "id": "tt10872600",
+            "url": "https://www.imdb.com/title/tt10872600/",
+            "primaryTitle": "Spider-Man: No Way Home",
+            "originalTitle": "Spider-Man: No Way Home",
+            "type": "movie",
+            "description": "Spider-Man: No Way Home is a 2021 superhero film where, after his secret identity is revealed to the world by Mysterio, Peter Parker asks Doctor Strange to cast a spell to make everyone forget he is Spider-Man. The spell goes awry, tearing the multiverse and bringing villains from other universes who have fought a Spider-Man. Peter must then grapple with this new threat, leading to a conflict that will change his future and that of the multiverse.",
+            "primaryImage": "https://m.media-amazon.com/images/M/MV5BNjc1YjE1ZDMtYTVlYy00NGZlLWExYmEtMTdlYzYwMzk5OWZlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+            "thumbnails": [
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BNjc1YjE1ZDMtYTVlYy00NGZlLWExYmEtMTdlYzYwMzk5OWZlXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,100,148_.jpg",
+                    "width": 100,
+                    "height": 148
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BNjc1YjE1ZDMtYTVlYy00NGZlLWExYmEtMTdlYzYwMzk5OWZlXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,280,414_.jpg",
+                    "width": 280,
+                    "height": 414
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BNjc1YjE1ZDMtYTVlYy00NGZlLWExYmEtMTdlYzYwMzk5OWZlXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,380,562_.jpg",
+                    "width": 380,
+                    "height": 562
+                }
+            ],
+            "trailer": "https://www.youtube.com/watch?v=JfVOs4VSpmA",
+            "video": nil,
+            "startYear": 2021,
+            "releaseDate": "2021-12-16",
+            "filmingLocations": [
+                "Iceland"
+            ],
+            "genres": [
+                "Action, Adventure, Fantasy"
+            ],
+            "averageRating": 8.2,
+        },
+        {
+            "id": "tt13210838",
+            "url": "https://www.imdb.com/title/tt13210838/",
+            "primaryTitle": "The Gentlemen",
+            "originalTitle": "The Gentlemen",
+            "type": "TV Series",
+            "description": "The Gentlemen (2024) is an eight-episode Netflix series created by Guy Ritchie, set in the world of his 2019 film of the same name. It follows a British aristocrat, Eddie Horniman, who unexpectedly inherits his family's estate and discovers it's built upon a massive underground cannabis empire run by the formidable Susie Glass. Eddie must then navigate this criminal underworld, getting entangled with various dangerous figures while trying to protect his family and the estate, which leads to a life of crime for the gentleman",
+            "primaryImage": "https://m.media-amazon.com/images/M/MV5BMzM0YzFhMTYtYjZkNS00MWRmLTg2ZDgtY2MzYjQ5ODVmOTI1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+            "thumbnails": [
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BNjc1YjE1ZDMtYTVlYy00NGZlLWExYmEtMTdlYzYwMzk5OWZlXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,100,148_.jpg",
+                    "width": 100,
+                    "height": 148
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BNjc1YjE1ZDMtYTVlYy00NGZlLWExYmEtMTdlYzYwMzk5OWZlXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,280,414_.jpg",
+                    "width": 280,
+                    "height": 414
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BNjc1YjE1ZDMtYTVlYy00NGZlLWExYmEtMTdlYzYwMzk5OWZlXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,380,562_.jpg",
+                    "width": 380,
+                    "height": 562
+                }
+            ],
+            "trailer": "https://www.youtube.com/watch?v=gnpfKsqeMrM",
+            "video": nil,
+            "startYear": 2024,
+            "releaseDate": "2024-03-07",
+            "filmingLocations": [
+                "Badminton House, Gloucestershire, England, UK(Halstead Manor exteriors, hallway and stairs)"
+            ],
+            "genres": [
+                "Action, Comedy, Crime"
+            ],
+            "averageRating": 8.0,
+        }
+        ]

@@ -29,9 +29,33 @@
 		D87A78492EC6F3BB00EB1C9B /* MoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D82E5C342EDE70AC0006C8DA /* Exceptions for "Movies" folder in "Movies" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				PreviewAssets/CarouselMoviesData.json,
+			);
+			target = D87A78312EC6F3B900EB1C9B /* Movies */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		D82E5C352EDE70AC0006C8DA /* Exceptions for "Movies" folder in "Compile Sources" phase from "Movies" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = D87A782E2EC6F3B900EB1C9B /* Sources */;
+			membershipExceptions = (
+				PreviewAssets/CarouselMoviesData.json,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D87A78342EC6F3B900EB1C9B /* Movies */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D82E5C342EDE70AC0006C8DA /* Exceptions for "Movies" folder in "Movies" target */,
+				D82E5C352EDE70AC0006C8DA /* Exceptions for "Movies" folder in "Compile Sources" phase from "Movies" target */,
+			);
 			path = Movies;
 			sourceTree = "<group>";
 		};
