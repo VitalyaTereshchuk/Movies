@@ -12,7 +12,6 @@ class FilmsViewModel {
     }
     
     var state: State = .idle
-    var films: [Film] = []
     
     private let service: ServiceProtocol
     

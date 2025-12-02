@@ -37,7 +37,7 @@ class FavoritesViewModel {
     //MARK: Preview
     static var exampleFavorite: FavoritesViewModel {
         let vm = FavoritesViewModel(service: MockFavoriteStorage())
-        vm.favoriteIDs = ["1", "2"]
+        vm.favoriteIDs = ["tt1312221"]
         return vm
     }
 }

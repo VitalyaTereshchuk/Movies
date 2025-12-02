@@ -1,10 +1,3 @@
-//
-//  FavouritesScreen.swift
-//  Movies
-//
-//  Created by Vitaly on 20.11.2025.
-//
-
 import SwiftUI
 
 struct FavoriteScreen: View {
@@ -13,7 +6,11 @@ struct FavoriteScreen: View {
     
     var films: [Film] {
         let favorite = favoritesViewModel.favoriteIDs
-        return filmsViewModel.films.filter { favorite.contains($0.id) }
+        switch filmsViewModel.state {
+        case .loaded(let films):
+            return films.filter { favorite.contains($0.id) }
+        default: return []
+        }
     }
     
     var body: some View {
