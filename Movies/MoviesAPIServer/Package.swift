@@ -17,5 +17,12 @@ let package = Package(
                 .product(name: "Swifter", package: "swifter")
             ]
         ),
+        
+            .executableTarget(
+                name: "BannerAPIServer",
+                dependencies: [
+                    .product(name: "Swifter", package: "swifter")
+                ]
+            )
     ]
 )

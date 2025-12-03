@@ -26,7 +26,11 @@ struct DefaultService: ServiceProtocol {
     
     func fetchFilms() async throws -> [Film] {
         let url = "http://localhost:8080/movies"
-        
         return try await fetch(for: url, type: [Film].self)
+    }
+    
+    func fetchBannerFilms() async throws -> [FilmCarousel] {
+        let url = "http://localhost:8081/bannerMovies"
+        return try await fetch(for: url, type: [FilmCarousel].self)
     }
 }

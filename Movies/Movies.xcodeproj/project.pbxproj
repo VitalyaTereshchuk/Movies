@@ -426,7 +426,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "Movies/PreviewAssets/SampleData.json Movies/PreviewAssets";
+				DEVELOPMENT_ASSET_PATHS = "Movies/PreviewAssets/SampleData.json Movies/PreviewAssets Movies/PreviewAssets/CarouselMoviesData.json";
 				DEVELOPMENT_TEAM = 3T7XR8TK5P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -465,7 +465,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "Movies/PreviewAssets/SampleData.json Movies/PreviewAssets";
+				DEVELOPMENT_ASSET_PATHS = "Movies/PreviewAssets/SampleData.json Movies/PreviewAssets Movies/PreviewAssets/CarouselMoviesData.json";
 				DEVELOPMENT_TEAM = 3T7XR8TK5P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

@@ -3,10 +3,11 @@ import Foundation
 struct MockService: ServiceProtocol {
     struct SampleData: Decodable {
         let results: [Film]
+        let result: [FilmCarousel]
     }
     
-    private func loadSampleData() throws -> SampleData {
-        guard let url = Bundle.main.url(forResource: "SampleData", withExtension: "json") else {
+    private func loadSampleData(for urlResource: String) throws -> SampleData {
+        guard let url = Bundle.main.url(forResource: urlResource, withExtension: "json") else {
             throw APIError.invalidURL
         }
         
@@ -25,13 +26,18 @@ struct MockService: ServiceProtocol {
     
     //MARK: Protocol conformance
     func fetchFilms() async throws -> [Film] {
-        let data = try loadSampleData()
+        let data = try loadSampleData(for: "SampleData")
         return data.results
+    }
+    
+    func fetchBannerFilms() async throws -> [FilmCarousel] {
+        let data = try loadSampleData(for: "CarouselMoviesData")
+        return data.result
     }
     
     //MARK: Preview/ testing only
     func fetchFilm() -> Film {
-        let data = try! loadSampleData()
+        let data = try! loadSampleData(for: "SampleData")
         return data.results.first!
     }
 }

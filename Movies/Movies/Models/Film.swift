@@ -1,6 +1,5 @@
 import Foundation
 
-nonisolated
 struct Film: Codable, Identifiable, Equatable, Hashable {
     let id: String
     let primaryTitle: String
@@ -12,8 +11,6 @@ struct Film: Codable, Identifiable, Equatable, Hashable {
     let averageRating: Float?
     let releaseDate: String
     
-    
-    @MainActor
     //MARK: - Preview
     static var example: Film {
         //MockService.fetchFilm()
@@ -33,7 +30,6 @@ struct Film: Codable, Identifiable, Equatable, Hashable {
                     releaseDate: "2025-11-07")
     }
     
-    @MainActor
     static var exampleFavorite: Film {
         //MockService.fetchFilm()
         let bannerURL = URL.convertAssetImage(named: "primaryImage")
@@ -53,7 +49,6 @@ struct Film: Codable, Identifiable, Equatable, Hashable {
     }
 }
 
-nonisolated
 struct Url: Codable, Equatable, Hashable {
     let url: String
     let width: Int
