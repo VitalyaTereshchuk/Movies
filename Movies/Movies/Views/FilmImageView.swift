@@ -1,4 +1,6 @@
 import SwiftUI
+import SDWebImageSwiftUI
+import SDWebImage
 
 
 struct FilmImageView: View {
@@ -13,24 +15,22 @@ struct FilmImageView: View {
     }
     
     var body: some View {
-        AsyncImage(url: url) { phase in
-            switch phase {
-            case .empty:
-                Color(white: 0.8)
-                    .overlay {
-                        ProgressView()
-                            .controlSize(.large)
-                    }
-            case .success(let image):
-                image
-                    .resizable()
-                    .scaledToFill()
-            case .failure(_):
-                Text("Could not get image")
-            @unknown default:
-                fatalError()
-            }
+        WebImage(url: url) { image in
+            image
+                .resizable()
+                .scaledToFill()
+        } placeholder: {
+            Color(.gray)
+            ProgressView()
         }
+        // Supports options and context, like `.delayPlaceholder` to show placeholder only when error
+        .onSuccess { image, _, _ in
+            // Success
+//            print("Loaded image: \(image)")
+            // Note: Data exist only when queried from disk cache or network. Use `.queryMemoryData` if you really need data
+        }
+        .indicator(.activity) // Activity Indicator
+        .transition(.fade(duration: 0.5)) // Fade Transition with duration
     }
 }
 
@@ -39,7 +39,3 @@ struct FilmImageView: View {
         .frame(width: 200 ,height: 300)
         .cornerRadius(10)
 }
-//
-//#Preview("banner image") {
-//    FilmImageView(film: "https://image.tmdb.org/t/p/w500/jUPCUYoVdTGa5DBSxOTAriLWqmW.jpg")
-//}

@@ -14,7 +14,7 @@ class BannerViewModel {
     var state: State = .idle
     
     private let service: ServiceProtocol
-    init(service: ServiceProtocol) {
+    init(service: ServiceProtocol = DefaultService()) {
         self.service = service
     }
     

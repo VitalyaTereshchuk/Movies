@@ -31,7 +31,7 @@ struct Film: Codable, Identifiable, Equatable, Hashable {
     }
     
     static var exampleFavorite: Film {
-        //MockService.fetchFilm()
+//        MockService.fetchFilm()
         let bannerURL = URL.convertAssetImage(named: "primaryImage")
         
         return Film(id: "tt1312221",
@@ -54,4 +54,3 @@ struct Url: Codable, Equatable, Hashable {
     let width: Int
     let height: Int
 }
-

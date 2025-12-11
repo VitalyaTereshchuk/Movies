@@ -29,7 +29,7 @@ class FilmsViewModel {
             self.state = .loaded(film)
         }
         catch let error as APIError {
-            self.state = .error(error.errorDescription ?? "unowned error")
+            self.state = .error(error.errorDescription)
         }
         catch  {
             self.state = .error("unowned error")

@@ -12,8 +12,9 @@ struct FilmDetailScreen: View {
             VStack(
                 spacing: 8
             ) {
-                FilmImageView(urlPatch: film.thumbnails[1].url)//Заменить потом интекс на [0] при тесте
-                    .frame(width: CGFloat(film.thumbnails[1].width),height: CGFloat(film.thumbnails[1].height))//Заменить потом интекс на [0] при тесте
+                FilmImageView(urlPatch: film.thumbnails[1].url) //Заменить потом интекс на [0] при тесте
+                    .frame(width: CGFloat(film.thumbnails[1].width),
+                           height: CGFloat(film.thumbnails[1].height)) //Заменить потом интекс на [0] при тесте
                     .cornerRadius(10)
                     .containerRelativeFrame(.horizontal)
                 

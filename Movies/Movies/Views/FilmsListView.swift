@@ -3,27 +3,29 @@ import SwiftUI
 struct FilmsListView: View {
     var films: [Film]
     let favoritesViewModel: FavoritesViewModel
-    
+        
     var body: some View {
         List(films) { film in
             NavigationLink(value: film) {
                 FilmRow(film: film, favoritesViewModel: favoritesViewModel)
             }
         }
+        .scrollContentBackground(.hidden)
         .navigationDestination(for: Film.self) { film in
             FilmDetailScreen(film: film, favoritesViewModel: favoritesViewModel)
         }
     }
 }
 
+
 private struct FilmRow: View {
     let film: Film
     let favoritesViewModel: FavoritesViewModel
- 
+    
     var body: some View {
         HStack(
             alignment: .top,
-               spacing: 25
+            spacing: 25
         ) {
             ZStack(
                 alignment: .topLeading
@@ -67,8 +69,8 @@ private struct FilmRow: View {
     NavigationStack {
         FilmsListView(films: [Film.example, Film.exampleFavorite], favoritesViewModel: favorites)
     }
-        .task {
-            favorites.load()
-        }
+    .task {
+        favorites.load()
+    }
 }
 
