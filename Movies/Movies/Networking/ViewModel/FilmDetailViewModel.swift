@@ -3,14 +3,7 @@ import Observation
 
 @Observable
 class FilmDetailViewModel {
-    enum State: Equatable {
-        case idle
-        case loading
-        case loaded(Film)
-        case error(String)
-    }
-    
-    var state: State = .idle
+    var state: LoadingState<[Film]> = .idle
     
     let service: ServiceProtocol
     
@@ -19,7 +12,7 @@ class FilmDetailViewModel {
     }
     
     func fetch(for film: Film) async {
-        guard state != .loading else { return }
+        guard !state.isLoading else { return }
         
         state = .loading
     }

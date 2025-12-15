@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 struct ContentView: View {
@@ -24,12 +23,13 @@ struct ContentView: View {
             }
             
             Tab(role: .search) {
-                SearchScreen()
+                SearchScreen(favoritesViewModel: favoritesViewModel)
             }
         }
         .task {
             favoritesViewModel.load()
         }
+        .setAppearanceTheme()
     }
 }
 

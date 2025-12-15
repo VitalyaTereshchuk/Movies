@@ -33,6 +33,14 @@ struct MockService: ServiceProtocol {
         return data.results
     }
     
+    func searchFilms(for searchTerm: String) async throws -> [Film] {
+        let allFilms = try await fetchFilms() 
+        
+        return allFilms.filter { film in
+            film.primaryTitle.localizedStandardContains(searchTerm)
+        }
+    }
+    
     func fetchBannerFilms() async throws -> [FilmCarousel] {
         let data = try loadSampleData(for: "CarouselMoviesData", type: CarouselData.self)
         return data.results

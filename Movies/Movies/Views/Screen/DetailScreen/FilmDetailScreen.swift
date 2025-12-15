@@ -10,11 +10,11 @@ struct FilmDetailScreen: View {
     var body: some View {
         ScrollView {
             VStack(
-                spacing: 8
+                alignment: .leading, spacing: 8
             ) {
-                FilmImageView(urlPatch: film.thumbnails[1].url) //Заменить потом интекс на [0] при тесте
+                FilmImageView(urlPatch: film.thumbnails[1].url) //При тесте mockdata заменить интекс на [0]
                     .frame(width: CGFloat(film.thumbnails[1].width),
-                           height: CGFloat(film.thumbnails[1].height)) //Заменить потом интекс на [0] при тесте
+                           height: CGFloat(film.thumbnails[1].height)) //При тесте mockdata заменить интекс на [0]
                     .cornerRadius(10)
                     .containerRelativeFrame(.horizontal)
                 
@@ -24,11 +24,14 @@ struct FilmDetailScreen: View {
                     Text(film.primaryTitle)
                         .font(.title3)
                         .fontWeight(.bold)
-
+                   
                     Divider()
                     
-                    Text("Characters")
+                    Text("Descriptions")
                         .font(.default)
+                        .bold()
+                    
+                    Text(film.description)
                 }
                 .padding()
             }

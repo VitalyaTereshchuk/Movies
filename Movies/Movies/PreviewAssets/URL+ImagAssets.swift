@@ -5,6 +5,7 @@ import UIKit
 /// - Parameter extension: Image type. Defaults to `.jpg` kind
 /// - Returns: Resulting URL for named image
 ///
+nonisolated
 extension URL {
     static func convertAssetImage(named name: String,
                                   extension: String = "jpg") -> URL? {

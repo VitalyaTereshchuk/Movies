@@ -1,10 +1,3 @@
-//
-//  MoviesUITestsLaunchTests.swift
-//  MoviesUITests
-//
-//  Created by Vitaly on 14.11.2025.
-//
-
 import XCTest
 
 final class MoviesUITestsLaunchTests: XCTestCase {

@@ -29,6 +29,14 @@ struct DefaultService: ServiceProtocol {
         return try await fetch(for: url, type: [Film].self)
     }
     
+    func searchFilms(for searchTerm: String) async throws -> [Film] {
+        let allFilms = try await fetchFilms() //dont have a search endpoint otherwise would do this here
+        
+        return allFilms.filter { film in
+            film.primaryTitle.localizedStandardContains(searchTerm)
+        }
+    }
+    
     func fetchBannerFilms() async throws -> [FilmCarousel] {
         let url = "http://localhost:8081/bannerMovies"
         return try await fetch(for: url, type: [FilmCarousel].self)

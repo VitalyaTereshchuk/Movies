@@ -33,6 +33,7 @@ struct NavBar: View {
                         .fill(.ultraThinMaterial)
                 }
         }
+        .padding()
     }
 }
 

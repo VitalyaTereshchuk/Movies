@@ -3,16 +3,7 @@ import Observation
 
 @Observable
 class FilmsViewModel {
-    
-    enum State: Equatable {
-        case idle
-        case loading
-        case loaded([Film])
-        case error(String)
-    }
-    
-    var state: State = .idle
-    var films: [Film] = []
+    var state: LoadingState<[Film]> = .idle
     
     private let service: ServiceProtocol
     
@@ -21,7 +12,7 @@ class FilmsViewModel {
     }
     
     func fetchFilms() async {
-        guard state == .idle else { return }
+        guard !state.isLoading || state.error != nil else { return }
         
         state = .loading
         
@@ -30,10 +21,17 @@ class FilmsViewModel {
             self.state = .loaded(film)
         }
         catch let error as APIError {
-            self.state = .error(error.errorDescription ?? "unowned error")
+            self.state = .error(error.errorDescription)
         }
         catch  {
             self.state = .error("unowned error")
         }
+    }
+    
+    //MARK: Preview
+    static var example: FilmsViewModel {
+        let vm = FilmsViewModel(service: MockService())
+        vm.state = .loaded([Film.example, Film.exampleFavorite])
+        return vm
     }
 }

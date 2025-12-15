@@ -35,19 +35,35 @@
 		D87A78492EC6F3BB00EB1C9B /* MoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D87CCF902EEBF33100622EC6 /* Exceptions for "MoviesUITests" folder in "MoviesTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				MoviesTests.swift,
+			);
+			target = D87A783E2EC6F3BB00EB1C9B /* MoviesTests */;
+		};
+		D87CCF912EEBF33100622EC6 /* Exceptions for "MoviesUITests" folder in "MoviesUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				MoviesTests.swift,
+			);
+			target = D87A78482EC6F3BB00EB1C9B /* MoviesUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D87A78342EC6F3B900EB1C9B /* Movies */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Movies;
 			sourceTree = "<group>";
 		};
-		D87A78422EC6F3BB00EB1C9B /* MoviesTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MoviesTests;
-			sourceTree = "<group>";
-		};
 		D87A784C2EC6F3BB00EB1C9B /* MoviesUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D87CCF902EEBF33100622EC6 /* Exceptions for "MoviesUITests" folder in "MoviesTests" target */,
+				D87CCF912EEBF33100622EC6 /* Exceptions for "MoviesUITests" folder in "MoviesUITests" target */,
+			);
 			path = MoviesUITests;
 			sourceTree = "<group>";
 		};
@@ -85,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				D87A78342EC6F3B900EB1C9B /* Movies */,
-				D87A78422EC6F3BB00EB1C9B /* MoviesTests */,
 				D87A784C2EC6F3BB00EB1C9B /* MoviesUITests */,
 				D87A78332EC6F3B900EB1C9B /* Products */,
 			);
@@ -141,9 +156,6 @@
 			);
 			dependencies = (
 				D87A78412EC6F3BB00EB1C9B /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D87A78422EC6F3BB00EB1C9B /* MoviesTests */,
 			);
 			name = MoviesTests;
 			packageProductDependencies = (
