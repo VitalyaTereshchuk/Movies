@@ -12,3 +12,8 @@ user 15086 0.0 ... swift run BannerAPIServer). Once we've identified the process
 Next, we can check the data in the browser at http://localhost:8080/movies , http://localhost:8081/bannerMovies -> if successful, we can begin working.
 
 You can use any other service to download movies. You just need to replace the API with one that suits you and change the model to match your JSON.
+
+Previews 
+------------------------------------------------------------------------------------------------------------------------------
+
+
