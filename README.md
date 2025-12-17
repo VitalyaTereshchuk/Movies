@@ -1,6 +1,6 @@
 # 📽️ Movies 🎞️
 
-🏗️ Stack: SwifyUI, MVVM, Swift Concurrency, DI, PhotosUI, SDWebImageWebPCoder, SDWebImageAVIFCoder ( 🌐 API: Localhost (IMDb-based)  )
+🏗️ Stack: SwifyUI, MVVM, Swift Concurrency, DI, PhotosUI, SDWebImageWebPCoder, SDWebImageAVIFCoder.  🌐 API: Localhost (IMDb-based)
 ------------------------------------------------------------------------------------------------------------------------------
 📝 Description movies:
 Using this app, you can find a movie you're interested in, view a synopsis, and add it to your favorites. You can also create a collection of your favorite movies for viewing.
