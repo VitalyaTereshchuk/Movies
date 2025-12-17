@@ -7,6 +7,8 @@ struct Film: Codable, Identifiable, Equatable, Hashable {
     let primaryImage: String
     let thumbnails: [Url]
     let filmingLocations: [String]?
+    let contentRating: String?
+    let genres: [String]?
     let startYear: Int
     let averageRating: Float?
     let releaseDate: String
@@ -25,6 +27,12 @@ struct Film: Codable, Identifiable, Equatable, Hashable {
                                      height: 414)
                     ],
                     filmingLocations: [ "North Bay, Nipissing, Ontario, Canada"],
+                    contentRating: "R",
+                    genres: [
+                        "Drama",
+                        "Fantasy",
+                        "Horror"
+                    ],
                     startYear: 2025,
                     averageRating: 7.5,
                     releaseDate: "2025-11-07")
@@ -43,6 +51,12 @@ struct Film: Codable, Identifiable, Equatable, Hashable {
                                      height: 414)
                     ],
                     filmingLocations: [ "North Bay, Nipissing, Ontario, Canada"],
+                    contentRating: "R",
+                    genres: [
+                        "Drama",
+                        "Fantasy",
+                        "Horror"
+                    ],
                     startYear: 2025,
                     averageRating: 7.5,
                     releaseDate: "2025-11-07")

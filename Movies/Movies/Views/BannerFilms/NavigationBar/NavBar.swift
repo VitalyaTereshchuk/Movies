@@ -27,7 +27,7 @@ struct NavBar: View {
             AnimatedCircleButtonListMovies(isHighlighted: $isHighlighted, isFocused: $isFocused , showSheet: $showSheet, highlightCircle: $highlightCircle)
                 .clipShape(.circle)
                 .fullScreenSheet(isPresented: $showSheet) {
-                    FilmsListScreen(filmViewModel: filmViewModel, favoritesViewModel: favoritesViewModel)     //Films List
+                    FilmsListScreen(filmViewModel: filmViewModel, favoritesViewModel: favoritesViewModel) //Films List
                 } background: {
                     ConcentricRectangle()
                         .fill(.ultraThinMaterial)

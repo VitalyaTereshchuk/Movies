@@ -6,6 +6,7 @@ enum UserDefaultsKeys {
     static let username = "username"
     static let itemsPerPage = "itemsPerPage"
     static let notificationsEnabled = "notificationsEnabled"
+    static let avatarImageData = "avatarImageData"
 }
 
 //MARK: - Data model for appearance

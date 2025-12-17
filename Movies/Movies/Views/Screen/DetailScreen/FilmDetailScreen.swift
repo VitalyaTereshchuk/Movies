@@ -12,26 +12,35 @@ struct FilmDetailScreen: View {
             VStack(
                 alignment: .leading, spacing: 8
             ) {
-                FilmImageView(urlPatch: film.thumbnails[1].url) //При тесте mockdata заменить интекс на [0]
-                    .frame(width: CGFloat(film.thumbnails[1].width),
-                           height: CGFloat(film.thumbnails[1].height)) //При тесте mockdata заменить интекс на [0]
-                    .cornerRadius(10)
-                    .containerRelativeFrame(.horizontal)
-                
-                VStack(
-                    alignment: .leading
-                ) {
+                FilmImageView(urlPatch: film.primaryImage)
+                    .frame(width: .infinity, height: .infinity)
+                        .cornerRadius(10)
+                        .containerRelativeFrame(.horizontal)
+                VStack {
                     Text(film.primaryTitle)
                         .font(.title3)
                         .fontWeight(.bold)
-                   
-                    Divider()
+                        .padding(.top, 20)
+                        .padding(.bottom, 30)
                     
-                    Text("Descriptions")
-                        .font(.default)
-                        .bold()
-                    
-                    Text(film.description)
+                    VStack(
+                        alignment: .leading
+                    ) {
+                        Group {
+                            InfoRow(label: "Genres:", value: film.genres?.joined(separator: ", ") ?? "Unknown")
+                            InfoRow(label: "Rating:", value: film.contentRating ?? "-")
+                            InfoRow(label: "Locations:", value: String(film.filmingLocations?.joined(separator: ", ") ?? "Unknown"))
+                            InfoRow(label: "Release data: ", value: film.releaseDate)
+                        }
+                        
+                        Divider()
+                        
+                        Text("Descriptions")
+                            .font(.default)
+                            .bold()
+                        
+                        Text(film.description)
+                    }
                 }
                 .padding()
             }
@@ -42,6 +51,23 @@ struct FilmDetailScreen: View {
         }
         .task(id: String(film.id)) {
             await viewModel.fetch(for: film)
+        }
+    }
+}
+
+fileprivate struct InfoRow: View {
+    let label: String
+    let value: String
+    
+    var body: some View {
+        GridRow {
+            Text(label)
+                .font(.subheadline)
+                .fontWeight(.bold)
+                .frame(width: 100, alignment: .leading)
+            
+            Text(value)
+                .font(.subheadline)
         }
     }
 }
