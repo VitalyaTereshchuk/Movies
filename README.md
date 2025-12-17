@@ -1,11 +1,11 @@
-# Movies
+# 📽️ Movies 🎞️
 
-🏗️ Stack: SwifyUI, MVVM, Swift Concurrency, DI, PhotosUI, SDWebImageWebPCoder, SDWebImageAVIFCoder
+🏗️ Stack: SwifyUI, MVVM, Swift Concurrency, DI, PhotosUI, SDWebImageWebPCoder, SDWebImageAVIFCoder ( 🌐 API: Localhost (IMDb-based)  )
 ------------------------------------------------------------------------------------------------------------------------------
-Description movies:
+📝 Description movies:
 Using this app, you can find a movie you're interested in, view a synopsis, and add it to your favorites. You can also create a collection of your favorite movies for viewing.
 ------------------------------------------------------------------------------------------------------------------------------
-Instructions for receiving data through localhost
+⚙️ Instructions for receiving data through localhost
 ------------------------------------------------------------------------------------------------------------------------------
 Getting data from Localhost(Server) with the data movies(imdb) API:
 To download data from the local server, navigate to the MoviesAPIServer folder via the terminal (cd Developer/Movies/Movies/MoviesAPIServer) -> while in this folder, type swift run MoviesAPIServer & and then enter swift run BannerAPIServer &. This is if you need to run two local hosts at once (we recommend running two local hosts) -> wait for the full collection. To cancel one of the local hosts, you'll need to find the PID (process identifier) ​​holding the port -> enter the command lsof -i :8080 in the terminal (if your server is on 8080 by default). COMMAND PID USER ...
@@ -15,7 +15,7 @@ Next, we can check the data in the browser at http://localhost:8080/movies , htt
 
 You can use any other service to download movies. You just need to replace the API with one that suits you and change the model to match your JSON.
 
-Previews 
+🎬 Previews 🍿
 ------------------------------------------------------------------------------------------------------------------------------
 
 <img width="319" height="880" alt="Снимок экрана 2025-12-17 в 12 26 20" src="https://github.com/user-attachments/assets/c148323d-6368-4974-b693-69a5eb399bee" />
