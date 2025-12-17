@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D8184B762EE47B8500390961 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D8184B752EE47B8500390961 /* SDWebImageSwiftUI */; };
+		D839ABC32EE48EAA00B3AC31 /* SDWebImageAVIFCoder in Frameworks */ = {isa = PBXBuildFile; productRef = D839ABC22EE48EAA00B3AC31 /* SDWebImageAVIFCoder */; };
+		D839ABC62EE48F3B00B3AC31 /* SDWebImageWebPCoder in Frameworks */ = {isa = PBXBuildFile; productRef = D839ABC52EE48F3B00B3AC31 /* SDWebImageWebPCoder */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D87A78402EC6F3BB00EB1C9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,19 +35,35 @@
 		D87A78492EC6F3BB00EB1C9B /* MoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D87CCF902EEBF33100622EC6 /* Exceptions for "MoviesUITests" folder in "MoviesTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				MoviesTests.swift,
+			);
+			target = D87A783E2EC6F3BB00EB1C9B /* MoviesTests */;
+		};
+		D87CCF912EEBF33100622EC6 /* Exceptions for "MoviesUITests" folder in "MoviesUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				MoviesTests.swift,
+			);
+			target = D87A78482EC6F3BB00EB1C9B /* MoviesUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D87A78342EC6F3B900EB1C9B /* Movies */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Movies;
 			sourceTree = "<group>";
 		};
-		D87A78422EC6F3BB00EB1C9B /* MoviesTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MoviesTests;
-			sourceTree = "<group>";
-		};
 		D87A784C2EC6F3BB00EB1C9B /* MoviesUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D87CCF902EEBF33100622EC6 /* Exceptions for "MoviesUITests" folder in "MoviesTests" target */,
+				D87CCF912EEBF33100622EC6 /* Exceptions for "MoviesUITests" folder in "MoviesUITests" target */,
+			);
 			path = MoviesUITests;
 			sourceTree = "<group>";
 		};
@@ -52,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D839ABC32EE48EAA00B3AC31 /* SDWebImageAVIFCoder in Frameworks */,
+				D8184B762EE47B8500390961 /* SDWebImageSwiftUI in Frameworks */,
+				D839ABC62EE48F3B00B3AC31 /* SDWebImageWebPCoder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				D87A78342EC6F3B900EB1C9B /* Movies */,
-				D87A78422EC6F3BB00EB1C9B /* MoviesTests */,
 				D87A784C2EC6F3BB00EB1C9B /* MoviesUITests */,
 				D87A78332EC6F3B900EB1C9B /* Products */,
 			);
@@ -112,6 +136,9 @@
 			);
 			name = Movies;
 			packageProductDependencies = (
+				D8184B752EE47B8500390961 /* SDWebImageSwiftUI */,
+				D839ABC22EE48EAA00B3AC31 /* SDWebImageAVIFCoder */,
+				D839ABC52EE48F3B00B3AC31 /* SDWebImageWebPCoder */,
 			);
 			productName = Movies;
 			productReference = D87A78322EC6F3B900EB1C9B /* Movies.app */;
@@ -129,9 +156,6 @@
 			);
 			dependencies = (
 				D87A78412EC6F3BB00EB1C9B /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D87A78422EC6F3BB00EB1C9B /* MoviesTests */,
 			);
 			name = MoviesTests;
 			packageProductDependencies = (
@@ -195,6 +219,11 @@
 			);
 			mainGroup = D87A78292EC6F3B900EB1C9B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D8184B742EE47B8500390961 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				D839ABC12EE48EAA00B3AC31 /* XCRemoteSwiftPackageReference "SDWebImageAVIFCoder" */,
+				D839ABC42EE48F3B00B3AC31 /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D87A78332EC6F3B900EB1C9B /* Products */;
 			projectDirPath = "";
@@ -399,15 +428,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "Movies/PreviewAssets/SampleData.json Movies/PreviewAssets";
+				DEVELOPMENT_ASSET_PATHS = "Movies/PreviewAssets/SampleData.json Movies/PreviewAssets Movies/PreviewAssets/CarouselMoviesData.json";
 				DEVELOPMENT_TEAM = 3T7XR8TK5P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -436,15 +469,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "Movies/PreviewAssets/SampleData.json Movies/PreviewAssets";
+				DEVELOPMENT_ASSET_PATHS = "Movies/PreviewAssets/SampleData.json Movies/PreviewAssets Movies/PreviewAssets/CarouselMoviesData.json";
 				DEVELOPMENT_TEAM = 3T7XR8TK5P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -592,6 +629,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8184B742EE47B8500390961 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.4;
+			};
+		};
+		D839ABC12EE48EAA00B3AC31 /* XCRemoteSwiftPackageReference "SDWebImageAVIFCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageAVIFCoder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.11.1;
+			};
+		};
+		D839ABC42EE48F3B00B3AC31 /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageWebPCoder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8184B752EE47B8500390961 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8184B742EE47B8500390961 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		D839ABC22EE48EAA00B3AC31 /* SDWebImageAVIFCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D839ABC12EE48EAA00B3AC31 /* XCRemoteSwiftPackageReference "SDWebImageAVIFCoder" */;
+			productName = SDWebImageAVIFCoder;
+		};
+		D839ABC52EE48F3B00B3AC31 /* SDWebImageWebPCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D839ABC42EE48F3B00B3AC31 /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */;
+			productName = SDWebImageWebPCoder;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D87A782A2EC6F3B900EB1C9B /* Project object */;
 }

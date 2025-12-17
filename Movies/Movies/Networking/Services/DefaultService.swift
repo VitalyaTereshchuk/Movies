@@ -1,7 +1,7 @@
 import Foundation
 
-struct DefaultService: Service {
-    func fetch<T: Decodable>(for URLString: String, type: T.Type) async throws -> T {
+struct DefaultService: ServiceProtocol {
+    private func fetch<T: Decodable>(for URLString: String, type: T.Type) async throws -> T {
         guard  let url = URL(string: URLString) else {
             throw APIError.invalidURL
         }
@@ -24,10 +24,21 @@ struct DefaultService: Service {
         }
     }
     
+    func fetchFilms() async throws -> [Film] {
+        let url = "http://localhost:8080/movies"
+        return try await fetch(for: url, type: [Film].self)
+    }
     
-    func fetchFilms() async throws -> TrendingMoviesResponse {
-        let url = "https://api.themoviedb.org/3/trending/movie/day?api_key=7c1de54e9061f4f2124aaf8669725261"
+    func searchFilms(for searchTerm: String) async throws -> [Film] {
+        let allFilms = try await fetchFilms() //dont have a search endpoint otherwise would do this here
         
-        return try await fetch(for: url, type: TrendingMoviesResponse.self)
+        return allFilms.filter { film in
+            film.primaryTitle.localizedStandardContains(searchTerm)
+        }
+    }
+    
+    func fetchBannerFilms() async throws -> [FilmCarousel] {
+        let url = "http://localhost:8081/bannerMovies"
+        return try await fetch(for: url, type: [FilmCarousel].self)
     }
 }

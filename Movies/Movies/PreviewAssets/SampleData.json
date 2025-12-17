@@ -1,1 +1,247 @@
-{"page":1,"results":[{"adult":false,"backdrop_path":"/jUPCUYoVdTGa5DBSxOTAriLWqmW.jpg","id":1054867,"title":"One Battle After Another","original_title":"One Battle After Another","overview":"Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.","poster_path":"/m1jFoahEbeQXtx4zArT2FKdbNIj.jpg","media_type":"movie","original_language":"en","genre_ids":[28,53,80],"popularity":257.0325,"release_date":"2025-09-23","video":false,"vote_average":7.7,"vote_count":1229},{"adult":false,"backdrop_path":"/69wb2O2QozXRzUhmHAHTIa7UiJy.jpg","id":1117857,"title":"In Your Dreams","original_title":"In Your Dreams","overview":"Stevie and her little brother Elliot journey into the wildly absurd landscape of their own dreams to ask the Sandman to grant them the perfect family.","poster_path":"/np7ZzU2rmUqqIPQ4HtfcC8JLOvS.jpg","media_type":"movie","original_language":"en","genre_ids":[16,10751,35,12,14],"popularity":57.914,"release_date":"2025-11-07","video":false,"vote_average":6.714,"vote_count":15},{"adult":false,"backdrop_path":"/5lQ4euO30sDin5nCifvi0vURFNd.jpg","id":1248226,"title":"Playdate","original_title":"Playdate","overview":"When out-of-work accountant Brian joins stay-at-home dad Jeff for a playdate with their sons, he expects a laid-back afternoon. Instead, they're chased by mercenaries, and Brian—totally unprepared—must survive one absurd obstacle after another.","poster_path":"/fGodXWqJkkkbSebPIlxLSygV8GY.jpg","media_type":"movie","original_language":"en","genre_ids":[28,35,10751],"popularity":369.57,"release_date":"2025-11-05","video":false,"vote_average":6.699,"vote_count":88}]}
+{ "results":
+    [
+        {
+            "id": "tt1312221",
+            "url": "https://www.imdb.com/title/tt1312221/",
+            "primaryTitle": "Frankenstein",
+            "originalTitle": "Frankenstein",
+            "type": "movie",
+            "description": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+            "primaryImage": "https://m.media-amazon.com/images/M/MV5BYzYzNDYxMTQtMTU4OS00MTdlLThhMTQtZjI4NGJmMTZmNmRiXkEyXkFqcGc@.jpg",
+            "thumbnails": [
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BYzYzNDYxMTQtMTU4OS00MTdlLThhMTQtZjI4NGJmMTZmNmRiXkEyXkFqcGc@._V1_QL75_UX100_CR0,0,100,148_.jpg",
+                    "width": 100,
+                    "height": 148
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BYzYzNDYxMTQtMTU4OS00MTdlLThhMTQtZjI4NGJmMTZmNmRiXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,280,414_.jpg",
+                    "width": 280,
+                    "height": 414
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BYzYzNDYxMTQtMTU4OS00MTdlLThhMTQtZjI4NGJmMTZmNmRiXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+                    "width": 380,
+                    "height": 562
+                }
+            ],
+            "trailer": null,
+            "contentRating": "R",
+            "startYear": 2025,
+            "endYear": null,
+            "releaseDate": "2025-11-07",
+            "interests": [
+                "Body Horror",
+                "Dark Fantasy",
+                "Monster Horror",
+                "Psychological Drama",
+                "Psychological Horror",
+                "Steampunk",
+                "Tragedy",
+                "Drama",
+                "Fantasy",
+                "Horror"
+            ],
+            "countriesOfOrigin": [
+                "MX",
+                "US"
+            ],
+            "externalLinks": [
+                "https://www.netflix.com/title/81507921"
+            ],
+            "spokenLanguages": [
+                "en",
+                "da",
+                "fr"
+            ],
+            "filmingLocations": [
+                "North Bay, Nipissing, Ontario, Canada"
+            ],
+            "productionCompanies": [
+                {
+                    "id": "co0235528",
+                    "name": "Bluegrass Films"
+                },
+                {
+                    "id": "co0901284",
+                    "name": "Demilo Films"
+                },
+                {
+                    "id": "co0839619",
+                    "name": "Double Dare You (DDY)"
+                }
+            ],
+            "budget": 120000000,
+            "grossWorldwide": 144496,
+            "genres": [
+                "Drama",
+                "Fantasy",
+                "Horror"
+            ],
+            "isAdult": false,
+            "runtimeMinutes": 149,
+            "averageRating": 7.5,
+            "numVotes": 154344,
+            "metascore": 77
+        },
+        {
+            "id": "tt19847976",
+            "url": "https://www.imdb.com/title/tt19847976/",
+            "primaryTitle": "Wicked: For Good",
+            "originalTitle": "Wicked: For Good",
+            "type": "movie",
+            "description": "Elphaba, the future Wicked Witch of the West and her relationship with Glinda, the Good Witch of the North. The second of a two-part feature film adaptation of the Broadway musical.",
+            "primaryImage": "https://m.media-amazon.com/images/M/MV5BNzRhNTE4ZTYtNTM0Mi00MzU3LTk4MTktYWE3MzQ2NTU0MDNlXkEyXkFqcGc@.jpg",
+            "thumbnails": [
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BNzRhNTE4ZTYtNTM0Mi00MzU3LTk4MTktYWE3MzQ2NTU0MDNlXkEyXkFqcGc@._V1_QL75_UX100_CR0,0,100,148_.jpg",
+                    "width": 100,
+                    "height": 148
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BNzRhNTE4ZTYtNTM0Mi00MzU3LTk4MTktYWE3MzQ2NTU0MDNlXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,280,414_.jpg",
+                    "width": 280,
+                    "height": 414
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BNzRhNTE4ZTYtNTM0Mi00MzU3LTk4MTktYWE3MzQ2NTU0MDNlXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+                    "width": 380,
+                    "height": 562
+                }
+            ],
+            "trailer": null,
+            "contentRating": "PG",
+            "startYear": 2025,
+            "endYear": null,
+            "releaseDate": "2025-11-21",
+            "interests": [
+                "Fairy Tale",
+                "Pop Musical",
+                "Family",
+                "Fantasy",
+                "Musical",
+                "Romance"
+            ],
+            "countriesOfOrigin": [
+                "US"
+            ],
+            "externalLinks": [
+                "https://www.facebook.com/wickedmovie",
+                "https://www.instagram.com/wickedmovie/"
+            ],
+            "spokenLanguages": [
+                "en"
+            ],
+            "filmingLocations": [
+                "England, UK"
+            ],
+            "productionCompanies": [
+                {
+                    "id": "co0005073",
+                    "name": "Universal Pictures"
+                },
+                {
+                    "id": "co0093810",
+                    "name": "Marc Platt Productions"
+                },
+                {
+                    "id": "co0800147",
+                    "name": "Ontario Interactive Digital Media Tax Credit"
+                }
+            ],
+            "budget": 150000000,
+            "grossWorldwide": 253477920,
+            "genres": [
+                "Family",
+                "Fantasy",
+                "Musical"
+            ],
+            "isAdult": false,
+            "runtimeMinutes": 137,
+            "averageRating": 7.1,
+            "numVotes": 21353,
+            "metascore": 58
+        },
+        {
+            "id": "tt30144839",
+            "url": "https://www.imdb.com/title/tt30144839/",
+            "primaryTitle": "One Battle After Another",
+            "originalTitle": "One Battle After Another",
+            "type": "movie",
+            "description": "When their evil enemy resurfaces after 16 years, a group of ex-revolutionaries reunite to rescue the daughter of one of their own.",
+            "primaryImage": "https://m.media-amazon.com/images/M/MV5BMzBkZmQ0NjMtNTZlMy00ZjdlLTg5ODUtYWFlNGM0YzE3MTg0XkEyXkFqcGc@.jpg",
+            "thumbnails": [
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BMzBkZmQ0NjMtNTZlMy00ZjdlLTg5ODUtYWFlNGM0YzE3MTg0XkEyXkFqcGc@._V1_QL75_UX100_CR0,0,100,148_.jpg",
+                    "width": 100,
+                    "height": 148
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BMzBkZmQ0NjMtNTZlMy00ZjdlLTg5ODUtYWFlNGM0YzE3MTg0XkEyXkFqcGc@._V1_QL75_UX280_CR0,0,280,414_.jpg",
+                    "width": 280,
+                    "height": 414
+                },
+                {
+                    "url": "https://m.media-amazon.com/images/M/MV5BMzBkZmQ0NjMtNTZlMy00ZjdlLTg5ODUtYWFlNGM0YzE3MTg0XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+                    "width": 380,
+                    "height": 562
+                }
+            ],
+            "trailer": "https://www.youtube.com/watch?v=hg8AGTyYMBA",
+            "contentRating": "R",
+            "startYear": 2025,
+            "endYear": null,
+            "releaseDate": "2025-09-26",
+            "interests": [
+                "Action Epic",
+                "Dark Comedy",
+                "Epic",
+                "Political Thriller",
+                "Action",
+                "Crime",
+                "Drama",
+                "Thriller"
+            ],
+            "countriesOfOrigin": [
+                "US"
+            ],
+            "externalLinks": [
+                "https://www.instagram.com/onebattleafteranothermovie/?hl=en",
+                "https://www.onebattleafteranothermovie.com/"
+            ],
+            "spokenLanguages": [
+                "en",
+                "es"
+            ],
+            "filmingLocations": [
+                "El Paso, Texas, USA"
+            ],
+            "productionCompanies": [
+                {
+                    "id": "co0027686",
+                    "name": "Ghoulardi Film Company"
+                },
+                {
+                    "id": "co0002663",
+                    "name": "Warner Bros."
+                },
+                {
+                    "id": "co1090055",
+                    "name": "Domain Entertainment (II)"
+                }
+            ],
+            "budget": 130000000,
+            "grossWorldwide": 202101742,
+            "genres": [
+                "Action",
+                "Crime",
+                "Drama"
+            ],
+            "isAdult": false,
+            "runtimeMinutes": 161,
+            "averageRating": 8,
+            "numVotes": 175769,
+            "metascore": 95
+        }
+    ]
+}
