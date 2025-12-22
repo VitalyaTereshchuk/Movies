@@ -1,5 +1,5 @@
 {
-  "originHash" : "09b3b9a8464dd62c990ba9175645cbce7d42b4f926a18636fc750e2283aa040e",
+  "originHash" : "3821bbc39b5a5a3010da22ed9f29ad6d55c1e862a13031e10d5b9c5e0060ba94",
   "pins" : [
     {
       "identity" : "libaom-xcode",
@@ -71,6 +71,15 @@
       "state" : {
         "revision" : "12d83edbcc795fb7b5c0c3cb74d739108d3357d2",
         "version" : "0.15.0"
+      }
+    },
+    {
+      "identity" : "youtubeplayerkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SvenTiigi/YouTubePlayerKit",
+      "state" : {
+        "revision" : "1ae827573024ab13dd6adea33b25d3eef6ff667c",
+        "version" : "2.0.5"
       }
     }
   ],

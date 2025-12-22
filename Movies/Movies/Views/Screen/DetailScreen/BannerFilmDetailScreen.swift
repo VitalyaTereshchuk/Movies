@@ -3,14 +3,18 @@ import SwiftUI
 
 struct BannerFilmDetailScreen: View {
     var movie: FilmCarousel
+    
     @Binding var showMovieDetail: Bool
     @Binding var movieDetail: FilmCarousel?
     @Binding var currentCardSize: CGSize
     
     var animation: Namespace.ID
     
+    @State var trailerViewModel = SearchTrailerYoutubeFilmViewModel()
     @State var showDetailContent: Bool = false
     @State var offset: CGFloat = 0
+    @State var showTrailer: Bool = false
+    @State private var showSheet: Bool = false
     
     var body: some View {
         //MARK: MOVIE DETAIL
@@ -54,19 +58,16 @@ struct BannerFilmDetailScreen: View {
                     Text(movie.descriptionFilm)
                         .multilineTextAlignment(.leading)
                     
-                    Button {
-                        
-                    } label: {
-                        Text("WATCH NOW")
-                            .fontWeight(.semibold)
-                            .foregroundColor(.white)
-                            .padding(.vertical)
-                            .frame(maxWidth: .infinity)
-                            .background {
-                                RoundedRectangle(cornerRadius: 10, style: .continuous)
-                                    .fill(.pink)
-                            }
-                    }
+                    ButtonShowTrailer(showSheet: $showSheet)
+                        .fullScreenSheet(isPresented: $showSheet,
+                                         content: {
+                            TrailerYoutubeScreen(movieTitle: movie.movieTitle,
+                                                 trailerViewModel: $trailerViewModel,
+                                                 movieDetail: $movieDetail)
+                        }, background: {
+                            ConcentricRectangle()
+                                .fill(.ultraThinMaterial)
+                        })
                     .padding(.top, 20)
                 } // END DETAILS VSTACK
                 .opacity(showDetailContent ? 1 : 0)

@@ -1,7 +1,5 @@
 import SwiftUI
 import SDWebImageSwiftUI
-import SDWebImage
-
 
 struct FilmImageView: View {
     let url: URL?

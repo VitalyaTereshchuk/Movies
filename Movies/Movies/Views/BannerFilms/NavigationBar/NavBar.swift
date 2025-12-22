@@ -37,10 +37,6 @@ struct NavBar: View {
     }
 }
 
-extension NavBar {
-    
-}
-
 #Preview {
     NavBar(filmViewModel: FilmsViewModel(service: MockService()), favoritesViewModel: FavoritesViewModel(service: MockFavoriteStorage()))
 }
