@@ -1,6 +1,6 @@
 # 📽️ Movies 🎞️
 
-🏗️ Stack: SwifyUI, MVVM, Swift Concurrency, DI, PhotosUI, SDWebImageWebPCoder, SDWebImageAVIFCoder.  🌐 API: Localhost (IMDb-based)
+🏗️ Stack: SwifyUI, MVVM, Swift Concurrency, DI, UserDefaults, PhotosUI,SDWebImageSwiftUI, SDWebImageWebPCoder, SDWebImageAVIFCoder, YouTubePlayerKit.  🌐 API: Localhost (IMDb-based)
 ------------------------------------------------------------------------------------------------------------------------------
 📝 Description movies:
 Using this app, you can find a movie you're interested in, view a synopsis, and add it to your favorites. You can also create a collection of your favorite movies for viewing.
@@ -22,6 +22,7 @@ You can use any other service to download movies. You just need to replace the A
 <img width="319" height="880" alt="Снимок экрана 2025-12-17 в 10 39 55-Photoroom" src="https://github.com/user-attachments/assets/e32fb3c1-033b-4037-848f-135f4fb8db15" />
 <img width="319" height="880" alt="Снимок экрана 2025-12-17 в 12 31 26-Photoroom" src="https://github.com/user-attachments/assets/08de15dc-e18f-4bb6-a0ca-f7a4b5cc8cbf" />
 <img width="319" height="880" alt="Снимок экрана 2025-12-17 в 12 34 28-Photoroom" src="https://github.com/user-attachments/assets/f4262b75-2037-4379-9722-b9d9b1b772ea" />
+<img width="319" height="880" alt="Снимок экрана 2025-12-22 в 12 21 06-Photoroom" src="https://github.com/user-attachments/assets/c87ea51b-1938-4d2e-8660-d6a523e4ff48" />
 <img width="319" height="880" alt="Снимок экрана 2025-12-17 в 11 59 47-Photoroom" src="https://github.com/user-attachments/assets/a7493908-1a0a-4578-ad5d-f873d12b5708" />
 <img width="319" height="880" alt="Снимок экрана 2025-12-17 в 11 50 41-Photoroom" src="https://github.com/user-attachments/assets/ea3c2e0b-f45f-4594-a278-819556687e3e" />
 <img width="319" height="880" alt="Снимок экрана 2025-12-17 в 12 01 05-Photoroom" src="https://github.com/user-attachments/assets/6f4b7eba-1ec3-4489-9bf2-af051c807ac6" />
