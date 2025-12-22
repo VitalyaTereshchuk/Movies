@@ -2,21 +2,18 @@ import Foundation
 import Observation
 
 @Observable
-class SearchFilmViewModel {
-    var state: LoadingState<[Film]> = .idle
+class SearchTrailerYoutubeFilmViewModel {
     
-//    private var lastSearchTerm: String = ""
+    var state: LoadingState<YoutubeSearchResponse> = .idle
     
-    private let service: ServiceProtocol
+    private var service: ServiceProtocol
     
     init(service: ServiceProtocol = DefaultService()) {
         self.service = service
     }
     
-    func fetchFilms(for searchTerm: String) async {
-//        self.lastSearchTerm = searchTerm
-        
-        guard !searchTerm.isEmpty else {
+    func fetchTrailerFilm(for title: String) async {
+        guard !title.isEmpty else {
             state = .idle
             return
         }
@@ -24,13 +21,13 @@ class SearchFilmViewModel {
         state = .loading
         
         do {
-            let film = try await service.searchFilms(for: searchTerm)
-            self.state = .loaded(film)
+            let filmTrailer = try await service.getMoviesTrailer(for: title)
+            self.state = .loaded(filmTrailer)
         }
         catch let error as APIError {
             self.state = .error(error.errorDescription)
         }
-        catch  {
+        catch {
             self.state = .error("unowned error")
         }
     }

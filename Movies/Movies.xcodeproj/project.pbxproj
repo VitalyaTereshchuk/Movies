@@ -10,6 +10,7 @@
 		D8184B762EE47B8500390961 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D8184B752EE47B8500390961 /* SDWebImageSwiftUI */; };
 		D839ABC32EE48EAA00B3AC31 /* SDWebImageAVIFCoder in Frameworks */ = {isa = PBXBuildFile; productRef = D839ABC22EE48EAA00B3AC31 /* SDWebImageAVIFCoder */; };
 		D839ABC62EE48F3B00B3AC31 /* SDWebImageWebPCoder in Frameworks */ = {isa = PBXBuildFile; productRef = D839ABC52EE48F3B00B3AC31 /* SDWebImageWebPCoder */; };
+		D83DB73B2EF634AE0026B238 /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = D83DB73A2EF634AE0026B238 /* YouTubePlayerKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 			files = (
 				D839ABC32EE48EAA00B3AC31 /* SDWebImageAVIFCoder in Frameworks */,
 				D8184B762EE47B8500390961 /* SDWebImageSwiftUI in Frameworks */,
+				D83DB73B2EF634AE0026B238 /* YouTubePlayerKit in Frameworks */,
 				D839ABC62EE48F3B00B3AC31 /* SDWebImageWebPCoder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +141,7 @@
 				D8184B752EE47B8500390961 /* SDWebImageSwiftUI */,
 				D839ABC22EE48EAA00B3AC31 /* SDWebImageAVIFCoder */,
 				D839ABC52EE48F3B00B3AC31 /* SDWebImageWebPCoder */,
+				D83DB73A2EF634AE0026B238 /* YouTubePlayerKit */,
 			);
 			productName = Movies;
 			productReference = D87A78322EC6F3B900EB1C9B /* Movies.app */;
@@ -223,6 +226,7 @@
 				D8184B742EE47B8500390961 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				D839ABC12EE48EAA00B3AC31 /* XCRemoteSwiftPackageReference "SDWebImageAVIFCoder" */,
 				D839ABC42EE48F3B00B3AC31 /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */,
+				D83DB7392EF634AE0026B238 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D87A78332EC6F3B900EB1C9B /* Products */;
@@ -655,6 +659,14 @@
 				minimumVersion = 0.15.0;
 			};
 		};
+		D83DB7392EF634AE0026B238 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SvenTiigi/YouTubePlayerKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -672,6 +684,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D839ABC42EE48F3B00B3AC31 /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */;
 			productName = SDWebImageWebPCoder;
+		};
+		D83DB73A2EF634AE0026B238 /* YouTubePlayerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D83DB7392EF634AE0026B238 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */;
+			productName = YouTubePlayerKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

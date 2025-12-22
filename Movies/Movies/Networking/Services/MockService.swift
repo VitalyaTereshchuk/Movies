@@ -9,6 +9,10 @@ struct MockService: ServiceProtocol {
         let results: [FilmCarousel]
     }
     
+    struct YoutubeData: Decodable {
+        let results: YoutubeSearchResponse
+    }
+    
     private func loadSampleData<T: Decodable>(for urlResource: String, type: T.Type) throws -> T {
         guard let url = Bundle.main.url(forResource: urlResource, withExtension: "json") else {
             throw APIError.invalidURL
@@ -43,6 +47,11 @@ struct MockService: ServiceProtocol {
     
     func fetchBannerFilms() async throws -> [FilmCarousel] {
         let data = try loadSampleData(for: "CarouselMoviesData", type: CarouselData.self)
+        return data.results
+    }
+    
+    func getMoviesTrailer(for query: String) async throws -> YoutubeSearchResponse {
+        let data = try loadSampleData(for: "YoutubeData", type: YoutubeData.self)       //TODO: Сдклать мок запрос для preview
         return data.results
     }
     

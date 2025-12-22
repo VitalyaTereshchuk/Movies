@@ -4,6 +4,7 @@ import Foundation
 enum APIError: LocalizedError {
     case invalidURL
     case invalidResponse
+    case invalidQuery
     case decoding(Error)
     case networkError(Error)
     
@@ -17,6 +18,8 @@ enum APIError: LocalizedError {
             return "Filed to decode response: \(error.localizedDescription)"
         case .networkError(let error):
             return "Network error: \(error.localizedDescription)"
+        case .invalidQuery:
+           return "The Query getting movie in youtube is invalid"
         }
     }
 }
