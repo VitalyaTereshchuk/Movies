@@ -18,7 +18,7 @@ You can use any other service to download movies. You just need to replace the A
 🎬 Previews 🍿
 ------------------------------------------------------------------------------------------------------------------------------
 <p align="center">
-  <img src="https://github.com/VitalyaTereshchuk/Movies/blob/main/demo.gif?raw=true" alt="Demo GIF"/>
+  <img src="https://github.com/VitalyaTereshchuk/Movies/blob/main/demo.gif" alt="demo.gif"/>
 </p>
 
 <img width="319" height="880" alt="Снимок экрана 2025-12-17 в 12 26 20" src="https://github.com/user-attachments/assets/c148323d-6368-4974-b693-69a5eb399bee" />
