@@ -16,13 +16,19 @@ Next, we can check the data in the browser at http://localhost:8080/movies , htt
  1️⃣ Navigate to the server folder
 Open Terminal and go to the MoviesAPIServer folder:
 
-<img width="652" height="31" alt="Снимок экрана 2025-12-23 в 14 00 18" src="https://github.com/user-attachments/assets/e3030f5f-f78a-4c77-ba94-579d3f89d737" />
+<img width="648" height="31" alt="Снимок экрана 2025-12-23 в 14 00 18" src="https://github.com/user-attachments/assets/e3030f5f-f78a-4c77-ba94-579d3f89d737" />
 
 
 2️⃣ Run the local servers
 Run both local hosts (recommended):
 
 <img width="648" height="44" alt="Снимок экрана 2025-12-23 в 13 57 19" src="https://github.com/user-attachments/assets/65c23542-09d9-44e5-a1ec-6a972a562f95" />
+
+
+3️⃣ Verify data in the browser
+Open the URLs to check if the servers are running correctly:
+
+<img width="645" height="47" alt="Снимок экрана 2025-12-23 в 14 03 38" src="https://github.com/user-attachments/assets/92c3ce8c-3b93-42c2-99a7-49eb2b438c1c" />
 
 
 You can use any other service to download movies. You just need to replace the API with one that suits you and change the model to match your JSON.
