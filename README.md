@@ -46,7 +46,7 @@ You can use any other service to download movies. You just need to replace the A
 <img width="319" height="880" alt="Снимок экрана 2025-12-22 в 12 21 06-Photoroom" src="https://github.com/user-attachments/assets/c87ea51b-1938-4d2e-8660-d6a523e4ff48" />
 <img width="319" height="880" alt="Снимок экрана 2025-12-17 в 11 59 47-Photoroom" src="https://github.com/user-attachments/assets/a7493908-1a0a-4578-ad5d-f873d12b5708" />
 <img width="319" height="880" alt="Снимок экрана 2025-12-17 в 11 50 41-Photoroom" src="https://github.com/user-attachments/assets/ea3c2e0b-f45f-4594-a278-819556687e3e" />
-<img width="319" height="880" alt="Снимок экрана 2025-12-17 в 12 01 05-Photoroom" src="https://github.com/user-attachments/assets/6f4b7eba-1ec3-4489-9bf2-af051c807ac6" />
+<img width="319" height="880" alt="Снимок экрана 2025-12-27 в 22 10 20-Photoroom" src="https://github.com/user-attachments/assets/c098d81e-8107-4853-9052-3c8564fd54ac" />
 <img width="319" height="880" alt="Снимок экрана 2025-12-17 в 12 02 54-Photoroom" src="https://github.com/user-attachments/assets/b9e83df1-3398-4c3e-88e9-9c8223269315" />
 <img width="319" height="880" alt="Снимок экрана 2025-12-17 в 12 07 09-Photoroom" src="https://github.com/user-attachments/assets/c95ce2df-af2f-44c6-8c48-b19da51b49f5" />
 <img width="319" height="880" alt="Снимок экрана 2025-12-17 в 12 21 39-Photoroom" src="https://github.com/user-attachments/assets/799512b4-e1aa-4186-ae0a-e148c606eee2" />
