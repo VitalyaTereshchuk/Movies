@@ -17,7 +17,8 @@ struct ContentView: View {
                 FavoriteScreen(filmsViewModel: filmsViewModel,
                                favoritesViewModel: favoritesViewModel)
             }
-            
+            .badge(favoritesViewModel.favoritesCount > 0 ? favoritesViewModel.favoritesCount : 0)
+           
             Tab("Settings", systemImage: "gear") {
                 SettingsScreen()
             }
