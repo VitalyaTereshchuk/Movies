@@ -34,6 +34,10 @@ class FavoritesViewModel {
         favoriteIDs.contains(filmID)
     }
     
+    var favoritesCount: Int {
+        favoriteIDs.count
+    }
+    
     //MARK: Preview
     static var exampleFavorite: FavoritesViewModel {
         let vm = FavoritesViewModel(service: MockFavoriteStorage())

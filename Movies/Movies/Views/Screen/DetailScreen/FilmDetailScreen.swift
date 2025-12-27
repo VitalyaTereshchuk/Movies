@@ -13,7 +13,6 @@ struct FilmDetailScreen: View {
                 alignment: .leading, spacing: 8
             ) {
                 FilmImageView(urlPatch: film.primaryImage)
-                    .frame(width: .infinity, height: .infinity)
                         .cornerRadius(10)
                         .containerRelativeFrame(.horizontal)
                 VStack {
